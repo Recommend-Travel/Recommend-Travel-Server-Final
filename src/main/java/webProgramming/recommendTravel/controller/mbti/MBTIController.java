@@ -13,7 +13,7 @@ import webProgramming.recommendTravel.service.mbti.MbtiService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/mbti")
+@RequestMapping("/recommend-travel")
 public class MbtiController {
     private static final Logger log = LoggerFactory.getLogger(MbtiController.class);
 
@@ -24,7 +24,7 @@ public class MbtiController {
         this.mbtiService = mbtiService;
     }
 
-    @PostMapping("/evaluate")
+    @PostMapping("/mbti-test")
     public ResponseEntity<String> evaluateMbti(@RequestBody List<String[]> answers) {
         log.info("Received data: {}", answers);
         String mbtiResult = mbtiService.evaluateMbti(answers);
