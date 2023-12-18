@@ -1,7 +1,8 @@
 package webProgramming.recommendTravel.service.recommend;
 
-import org.springframework.stereotype.Service;
 
-@Service
-public class RecommendService {
+import webProgramming.recommendTravel.domain.destination.Destination;
+
+public interface RecommendService {
+    Destination getRecommendationByMbti(String mbtiType);
 }
