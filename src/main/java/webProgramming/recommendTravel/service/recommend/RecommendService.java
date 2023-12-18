@@ -2,7 +2,8 @@ package webProgramming.recommendTravel.service.recommend;
 
 
 import webProgramming.recommendTravel.domain.destination.Destination;
+import webProgramming.recommendTravel.dto.customResponse.CustomResponse;
 
 public interface RecommendService {
-    Destination getRecommendationByMbti(String mbtiType);
+    CustomResponse getRecommendationByMbti(String mbtiType);
 }

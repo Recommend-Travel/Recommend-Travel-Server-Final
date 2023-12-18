@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.List;
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -40,4 +42,8 @@ public class Destination {
 
     @Column(length = 50)
     private String imgUrl3; // `img_url` 필드를 Java에서 camelCase로 변경
+
+    @Transient // 데이터베이스에 저장되지 않는 필드
+    private List<RecommendedDestination> recommendedDestinations;
 }
+
