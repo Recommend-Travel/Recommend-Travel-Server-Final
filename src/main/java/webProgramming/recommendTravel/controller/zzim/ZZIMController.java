@@ -30,6 +30,7 @@ public class ZZIMController {
                 ResponseEntity.status(HttpStatus.OK).body(favorite) :
                 ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
     }
+    // zim
     @GetMapping("/zzim/{user_id}")
     public ResponseEntity<DestinationDTORes> retrieveList(@PathVariable String user_id) {
         DestinationDTORes destinationDTORes = zzimService.retrieveList(user_id);
