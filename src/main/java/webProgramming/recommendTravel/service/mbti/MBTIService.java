@@ -1,7 +1,7 @@
 package webProgramming.recommendTravel.service.mbti;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
-public class MBTIService {
+public interface MBTIService {
+    String evaluateMbti(List<String[]> answers);
 }
