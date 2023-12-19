@@ -5,20 +5,19 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import webProgramming.recommendTravel.service.mbti.MbtiService;
+import webProgramming.recommendTravel.service.mbti.MBTIService;
 
 import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000")
-
 @RestController
 @RequestMapping("/recommend-travel")
-public class MbtiController {
-    private static final Logger log = LoggerFactory.getLogger(MbtiController.class);
+public class MBTIController {
+    private static final Logger log = LoggerFactory.getLogger(MBTIController.class);
 
-    private final MbtiService mbtiService;
+    private final MBTIService mbtiService;
 
     @Autowired
-    public MbtiController(MbtiService mbtiService) {
+    public MBTIController(MBTIService mbtiService) {
         this.mbtiService = mbtiService;
     }
 

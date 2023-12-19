@@ -8,12 +8,12 @@ import java.util.List;
 
 // MbtiServiceImpl.java
 @Service
-public class MbtiServiceImpl implements MbtiService {
+public class MBTIServiceImpl implements MBTIService {
 
     private final MbtiEvaluator mbtiEvaluator;
 
     @Autowired
-    public MbtiServiceImpl(MbtiEvaluator mbtiEvaluator) {
+    public MBTIServiceImpl(MbtiEvaluator mbtiEvaluator) {
         this.mbtiEvaluator = mbtiEvaluator;
     }
 
